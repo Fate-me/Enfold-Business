@@ -148,9 +148,12 @@ li {
 }
 
 .services .border,
-.feed-back .border,
-.s {
+.feed-back .border {
     border-top-color: white;
+}
+
+.s {
+    border-top-color: #f8f8f8;
 }
 
 .hero {
