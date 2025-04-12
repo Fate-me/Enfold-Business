@@ -2,6 +2,7 @@
 
 
 This is a responsive business website template built with HTML and CSS.
+
 It features a clean and professional layout suitable for corporate or business websites.
 
 ----------------------------------------------------------------------------------------------------------------------------------------------
