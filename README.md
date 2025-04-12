@@ -10,4 +10,4 @@ It features a clean and professional layout suitable for corporate or business w
 
 
 
-check out the live demo [here](https://fate-me.github.io/Enfold-Business/)
+Check out the live demo [here](https://fate-me.github.io/Enfold-Business/)
