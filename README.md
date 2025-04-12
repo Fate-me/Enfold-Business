@@ -7,7 +7,7 @@ It features a clean and professional layout suitable for corporate or business w
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Let's Go Live
+#Let's Go Live
 
 
-check out the live demo[here](https://fate-me.github.io/Enfold-Business/)
+check out the live demo [here](https://fate-me.github.io/Enfold-Business/)
