@@ -1,0 +1,687 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.montserrat {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+}
+
+.liter-regular {
+    font-family: "Liter", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?aqbonk');
+    src: url('../fonts/icomoon.eot?aqbonk#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?aqbonk') format('truetype'),
+        url('../fonts/icomoon.woff?aqbonk') format('woff'),
+        url('../fonts/icomoon.svg?aqbonk#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-flash:before {
+    content: "\e900";
+}
+
+.icon-tools-2:before {
+    content: "\e901";
+}
+
+.icon-wrench:before {
+    content: "\e901";
+}
+
+.icon-screwdriver:before {
+    content: "\e901";
+}
+
+.icon-user:before {
+    content: "\e971";
+}
+
+.icon-search:before {
+    content: "\e986";
+}
+
+.icon-star-full:before {
+    content: "\e9d9";
+}
+
+.icon-mail4:before {
+    content: "\ea86";
+}
+
+@keyframes head {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes hide {
+    0% {
+        top: 0;
+        right: 100%;
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    51% {
+        opacity: 1;
+    }
+
+
+    100% {
+        opacity: 1;
+        top: 0;
+        right: 25%;
+    }
+}
+
+body {
+    font-family: Liter;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Montserrat;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.border {
+    border: 20px solid transparent;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 200;
+}
+
+.hero .border {
+    border-top-color: #307ecc;
+}
+
+.services .border,
+.feed-back .border,
+.s {
+    border-top-color: white;
+}
+
+.hero {
+    width: 100%;
+    height: 430px;
+    background-color: #307ecc;
+    background-image: url(https://kriesi.at/themes/enfold-business-flat/wp-content/uploads/sites/43/2014/08/icon_bg_trans_wave.png);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: white;
+}
+
+.header {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 85px;
+    height: 87px;
+    background-image: url(../logo_flat_portfolio_white.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.menu ul {
+    display: flex;
+    gap: 25px;
+    height: 100%;
+}
+
+.menu li {
+    text-transform: capitalize;
+    font-size: 13px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid transparent;
+    transition: 0.5s;
+}
+
+.menu li:hover,
+.search:hover {
+    border-bottom-color: white;
+    color: lightgray;
+}
+
+.menu li:first-child {
+    border-bottom: 2px solid white;
+}
+
+.search {
+    padding: 20px;
+}
+
+.hamburger-menu {
+    width: 50px;
+    height: 5px;
+    background-color: white;
+    position: relative;
+    display: none;
+}
+
+.hamburger-menu::after {
+    content: "";
+    width: 50px;
+    height: 5px;
+    background-color: white;
+    position: absolute;
+    top: -15px;
+    left: 0;
+}
+
+.hamburger-menu::before {
+    content: "";
+    width: 50px;
+    height: 5px;
+    background-color: white;
+    position: absolute;
+    top: 15px;
+    left: 0;
+}
+
+.contant {
+    width: 75%;
+    margin: 60px auto;
+    display: flex;
+    flex-direction: column;
+    animation-name: head;
+    animation-duration: 3s;
+}
+
+.contant>h2 {
+    font-size: 73px;
+    margin-bottom: 15px;
+}
+
+.contant>p {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.services {
+    width: 100%;
+    background-color: white;
+    position: relative;
+    padding: 20px 0 60px 0;
+}
+
+.s-contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.s-contact>:first-child {
+    font-style: normal;
+    margin-bottom: 10px;
+    color: gray;
+}
+
+.s-contact>p {
+    text-align: center;
+    margin-top: 18px;
+    width: 90%;
+    max-width: 600px;
+    font-size: 16px;
+    line-height: 1.8em;
+    color: gray;
+}
+
+.s-contact>h2 {
+    font-size: 30px;
+    width: 90%;
+}
+
+.s-contact span {
+    color: black;
+}
+
+.middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.line {
+    width: 70px;
+    height: 1px;
+    background-color: lightgray;
+    margin: 0 10px;
+}
+
+.blue {
+    color: #307ecc;
+}
+
+.icon-boxs {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.box {
+    display: flex;
+    width: 30%;
+    gap: 17px;
+    justify-content: center;
+}
+
+.circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px solid #307ecc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.b-contact {
+    width: 60%;
+}
+
+.b-contact>h3 {
+    margin-bottom: 10px;
+}
+
+.b-contact>p {
+    font-family: liter;
+    line-height: 23px;
+    font-size: 13px;
+    color: gray;
+}
+
+.portfolio {
+    width: 100%;
+    background-color: #f8f8f8;
+    position: relative;
+    padding: 50px 0;
+}
+
+.image {
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto;
+    animation-name: hide;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 5ms;
+}
+
+.image img {
+    width: 100%;
+}
+
+.projects {
+    width: 100%;
+    background-color: lightgray;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.project {
+    width: 25%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.project img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    transition: 0.9s;
+}
+
+.glass {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.project:hover img {
+    transform: scale(1.1);
+}
+
+.project:hover .glass {
+    opacity: 0;
+}
+
+.feed-back {
+    background-color: white;
+    padding: 70px 0;
+    position: relative;
+}
+
+.title {
+    width: 98%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.title i {
+    font-style: normal;
+    color: gray;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.title>h2 {
+    font-size: 30px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.text {
+    width: 70%;
+    margin: 0 auto;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: gray;
+    line-height: 1.8em;
+}
+
+.our-company {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.img-text {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-image: url(../logo_flat_portfolio.png);
+    background-size: cover;
+}
+
+.gray {
+    color: grey;
+    margin-top: 8px;
+    font-size: 12px;
+}
+
+
+.touch {
+    width: 100%;
+    background-color: #307ecc;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    transition: 0.6s;
+    text-align: center;
+
+}
+
+.title-t {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.touch p {
+    width: 95%;
+}
+
+.touch p a {
+    color: lightgray;
+    text-decoration: none;
+}
+
+.email {
+    opacity: 0;
+    font-size: 35px;
+}
+
+.touch:hover {
+    background-color: #444444;
+}
+
+.touch:hover .email {
+    opacity: 1;
+    transition: 0.6s;
+}
+
+.touch:hover h4 {
+
+    margin-right: 10px;
+    transition: 0.6s;
+}
+
+.site-info {
+    width: 100%;
+    background-color: #222222;
+    color: rgb(163, 160, 160);
+
+}
+
+.container-info {
+    width: 75%;
+    margin: 0 auto;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info {
+    width: 21%;
+    color: rgb(145, 143, 143);
+    font-size: 12px;
+    line-height: 1.6em;
+}
+
+.info h4 {
+    font-size: 15px;
+}
+
+.info p a {
+    text-decoration: none;
+    color: rgb(145, 143, 143);
+}
+
+.info p a:hover {
+    color: white;
+}
+
+ul,
+li {
+    list-style: none;
+    text-transform: capitalize;
+}
+
+.info li {
+    margin-bottom: 4px;
+}
+
+.info>:first-child {
+    margin: 10px 0;
+}
+
+.i :nth-child(3) {
+    margin-bottom: 15px;
+}
+
+.i p {
+    font-size: 15px;
+    line-height: 19px;
+}
+
+.site-info li:hover {
+    color: white;
+}
+
+.f :nth-child(2) {
+    margin-bottom: 15px;
+}
+
+.footer {
+    width: 100%;
+    background-color: #222222;
+    border-top: 1px solid gray;
+    padding: 15px 0;
+    color: white;
+    font-size: 11px;
+}
+
+.container-footer {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
+
+.footer-menu ul {
+    display: flex;
+}
+
+.footer-menu li {
+    padding: 0 10px;
+    text-align: center;
+    border-right: 1px solid gray;
+}
+
+.footer-menu :last-child {
+    border: none;
+}
+
+/*RESPONSIVE*/
+@media(max-width:1024px) {
+    .contant h2 {
+        font-size: 50px;
+    }
+
+    .contant p {
+        font-size: 18px;
+    }
+}
+
+@media(max-width:768px) {
+    .menu ul {
+        display: none;
+    }
+
+    .search {
+        padding-right: 30px;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .box {
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+
+@media(max-width:580px) {
+    .project {
+        width: 100%;
+    }
+
+    .container-info {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .info {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .container-footer {
+        width: 90%;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
